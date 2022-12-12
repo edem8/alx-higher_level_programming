@@ -18,7 +18,3 @@ def add_tuple(tuple_a=(), tuple_b=()):
 
     new_tuple = a, b
     return new_tuple
-
-
-
-print(add_tuple((1), (1, 2)))
