@@ -16,11 +16,11 @@ if __name__ == "__main__":
 
     from calculator_1 import add, sub, mul, div
 
-    if argv[2] == "+":
+    if operator == "+":
         print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
-    if argv[2] == "-":
+    if operator == "-":
         print("{:d} - {:d} = {:d}".format(a, b, sub(a, b)))
-    if argv[2] == "*":
+    if operator == "*":
         print("{:d} * {:d} = {:d}".format(a, b, mul(a, b)))
-    if argv[2] == "/":
+    if operator == "/":
         print("{:d} * {:d} = {:d}".format(a, b, div(a, b)))
