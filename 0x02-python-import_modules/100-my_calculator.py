@@ -4,11 +4,11 @@ if __name__ == "__main__":
     import sys
 
     if len(sys.argv) - 1 != 3:
-            print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-            exit(1)
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
+        exit(1)
     operator = sys.argv[2]
     if operator not in ("+", "-", "*", "/"):
-        print("Unknown operator. Available operators: +, -, *, and /")
+        print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
 
     a = int(sys.argv[1])
@@ -23,4 +23,4 @@ if __name__ == "__main__":
     if operator == "*":
         print("{:d} * {:d} = {:d}".format(a, b, mul(a, b)))
     if operator == "/":
-        print("{:d} * {:d} = {:d}".format(a, b, div(a, b)))
+        print("{:d} / {:d} = {:d}".format(a, b, div(a, b)))
