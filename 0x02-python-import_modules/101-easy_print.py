@@ -1,2 +1,7 @@
 #!/usr/bin/python3
-__import__("os").write(1, "#pythoniscool\n".encode("UFT-8"))
+
+import builtins
+
+builtins.__dict__['_'] = lambda x: builtins.__dict__['print'](x, end="")
+
+_("#pythoniscool\n")
