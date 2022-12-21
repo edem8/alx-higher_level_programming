@@ -2,11 +2,11 @@
 
 if __name__ == "__main__":
     import sys
-    arg_count = 0;
+    arg_count = 0
 
     if len(sys.argv) < 2:
         print("{:d} arguments.".format(0))
-    elif len(sys.argv) == 1:
+    elif len(sys.argv) == 2:
         print("{:d} argument:".format(1))
         print("{:d}: {}".format(len(sys.argv), sys.argv[1]))
     else:
@@ -16,4 +16,3 @@ if __name__ == "__main__":
 
         for num in range(1, arg_count):
             print("{:d}: {}".format(num, sys.argv[num]))
-
