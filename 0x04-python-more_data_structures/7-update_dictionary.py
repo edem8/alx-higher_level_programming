@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 def update_dictionary(a_dictionary, key, value):
-    if key is in list(a_dictionary):
+    if key in list(a_dictionary):
         a_dictionary[key] = value
     else:
         a_dictionary[key] = value
