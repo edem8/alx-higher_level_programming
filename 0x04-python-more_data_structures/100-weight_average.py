@@ -5,6 +5,7 @@ def weight_average(my_list=[]):
         return 0
     add = 0
     div = 0
+    result = 0
     for tup in my_list:
         for num in tup:
             result += num
