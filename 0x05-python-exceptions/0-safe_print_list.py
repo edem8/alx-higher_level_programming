@@ -2,8 +2,10 @@
 
 def safe_print_list(my_list=[], x=0):
     try:
-        for i in range(0, x + 1):
+        j = 0
+        fori i in range(x):
             print(my_list[i], end="")
+            j += 1
     except IndexError:
         print()
-    return x
+    return j
