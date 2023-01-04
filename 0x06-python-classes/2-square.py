@@ -12,13 +12,9 @@ raise ValueError exception if size < 0
 class Square:
     """ Initialization method below"""
     def __init__(self, size=0):
-        try:
             if type(size) != int:
-                raise TypeError
+                raise TypeError("size must be an integer")
             if size < 0:
-                raise ValueError
-            self.__size = size
-        except TypeError:
-            print("size must be an integer")
-        except ValueError:
-            print("size must be >= 0")
+                raise ValueError("size must be >= 0")
+            else:
+                self.__size = size
