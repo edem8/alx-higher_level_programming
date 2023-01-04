@@ -9,5 +9,5 @@ Hence an error might be thrown if type is wrong
 
 class Square:
     """ initialization method below """
-    def __init___(self, size):
+    def __init__(self, size):
         self.__size = size
