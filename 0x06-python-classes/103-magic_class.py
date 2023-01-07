@@ -2,14 +2,13 @@
 """
 Define a magic class that executes the bytecode provided
 """
+import math
 
 
 class MagicClass:
     """Represents a circle"""
     def __init__(self, radius=0):
-        if not isinstance(radius, int):
-            raise TypeError("radius must be a number")
-        if not isinstance(radius, float):
+        if type(radius) is not int and type(radius) is not float:
             raise TypeError("radius must be a number")
         self.__radius = radius
 
