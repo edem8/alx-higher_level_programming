@@ -6,7 +6,7 @@ Define a magic class that executes the bytecode provided
 
 class MagicClass:
     """Represents a circle"""
-    def __inti__(self, radius=0):
+    def __init__(self, radius=0):
         if not isinstance(radius, int):
             raise TypeError("radius must be a number")
         if not isinstance(radius, float):
