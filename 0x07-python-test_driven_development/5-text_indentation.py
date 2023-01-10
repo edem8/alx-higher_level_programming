@@ -16,9 +16,11 @@ def text_indentation(text):
         if text[index] == "." or text[index] == "?" or text[index] == ":":
             print(text[index])
             print()
-        elif text[index - 1] == "." or text[index - 1] == "?":
+        elif text[index - 1] == "." and text[index] == " ":
             continue
-        elif text[index - 1] == ":":
+        elif text[index - 1] == ":" and text[index] == " ":
+            continue
+        elif text[index - 1] == "?" and text[index] == " ":
             continue
         else:
             print(text[index], end="")
