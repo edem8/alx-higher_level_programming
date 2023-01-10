@@ -34,3 +34,24 @@ Testing multiple cases
 	>>> matrix_divided() #doctest: +ELLIPSIS
 	Traceback (most recent call last):
 	TypeError: ...
+
+	>>> matrix_divided([[1, 2, 3], [4, 5, 6]], "2") #doctest: +ELLIPSIS
+	Traceback (most recent call last):
+	TypeError: ...
+
+	>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 0) #doctest: +ELLIPSIS
+	Traceback (most recent call last):
+	ZeroDivisionError: ...
+
+	>>> matrix_divided([["1", "2", "3"], ["4", "5", "6"]], 3) #doctest: +ELLIPSIS
+	Traceback (most recent call last):
+	TypeError: ...
+
+	>>> matrix_divided([[1, 2, 3], [4, 5, 6]]) #doctest: +ELLIPSIS
+	Traceback (most recent call last):
+	TypeError: ...
+
+	>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 0.0) #doctest: +ELLIPSIS
+	Traceback (most recent call last):
+	ZeroDivisionError: ...
+

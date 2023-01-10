@@ -16,15 +16,15 @@ def matrix_divided(matrix, div):
     """ Matrix division implementation """
     if not isinstance(matrix, list):
         raise TypeError("matrix must be a matrix" +
-                        "(lists of lists) of integers/floats")
+                        " (lists of lists) of integers/floats")
     for row in matrix:
         if not isinstance(row, list):
             raise TypeError("matrix must be a matrix" +
-                            "(list of lists) of integers/floats")
+                            " (list of lists) of integers/floats")
         for element in row:
             if type(element) not in [int, float]:
                 raise TypeError("matrix must be a matrix" +
-                                "(list of lists) of integers/floats")
+                                " (list of lists) of integers/floats")
 
     matrix_len = len(matrix[0])
     for row in matrix:
@@ -33,7 +33,7 @@ def matrix_divided(matrix, div):
     if type(div) not in [int, float]:
         raise TypeError("div must be a number")
     if div == 0:
-        raise ZeroDivisionError("division by Zero")
+        raise ZeroDivisionError("division by zero")
 
     new_matrix = [[round(x / div, 2) for x in row] for row in matrix]
     return new_matrix
