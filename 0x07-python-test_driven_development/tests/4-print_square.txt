@@ -1,0 +1,34 @@
+==============================
+How to use "4-print_square.py"
+=============================
+
+The module defines the print_square()
+example of use
+	
+	>>> print_square = __import__('4-print_square').print_square
+	>>> print_square(3)
+	###
+	###
+	###
+
+=======================
+TEsting multiple cases
+=======================
+	
+	>>> print_square("3") #doctest: +ELLIPSIS
+	Traceback (most recent call last):
+	TypeError: ...
+
+	>>> print_square() #doctest: +ELLIPSIS
+	Traceback (most recent call last):
+	TypeError: ...
+
+	>>> print_square(None) #doctest: +ELLIPSIS
+	Traceback (most recent call last):
+	TypeError: ...
+
+	>>> print_square(-2) #doctest: +ELLIPSIS
+	Traceback (most recent call last):
+	ValueError: ...
+
+
