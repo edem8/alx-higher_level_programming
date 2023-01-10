@@ -1,0 +1,38 @@
+=============================
+How to use "3-say_my_name.py"
+=============================
+
+Call the function name "say_my_name()" and pass your first and last name.
+Example
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+	>>> say_my_name("Bless", "Kwaku")
+	My name is Bless Kwaku
+
+==============================
+Testing multiple cases
+=================================
+
+	>>> say_my_name("Bless") #doctest: +NORMALIZE_WHITESPACE
+	My name is Bless
+
+	>>> say_my_name() #doctest: +ELLIPSIS
+	Traceback (most recent call last):
+	TypeError: ...
+
+	>>> say_my_name(2) #doctest: +ELLIPSIS
+	Traceback (most recent call last):
+	TypeError: ...
+
+	>>> say_my_name(2, 4) #doctest: +ELLIPSIS
+	Traceback (most recent call last):
+	TypeError: ...
+
+	>>> say_my_name(None) #doctest: +ELLIPSIS
+	Traceback (most recent call last):
+	TypeError: ...
+
+	>>> say_my_name("Bob", None) #doctest: +ELLIPSIS
+	Traceback (most recent call last):
+	TypeError: ...
+
+	
