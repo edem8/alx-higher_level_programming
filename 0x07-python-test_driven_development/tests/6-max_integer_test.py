@@ -19,3 +19,18 @@ class TestMaxInteger(unittest.TestCase):
     def test_no_list_passed(self):
         self.assertEqual(max_integer(), None)
 
+    def test_max_at_beginning(self):
+        self.assertEqual(max_integer([6, 3, 2]), 6)
+
+    def test_max_at_middle(self):
+        self.assertEqual(max_integer([2, 5, 1]), 5)
+
+    def test_negative_number(self):
+        self.assertEqual(max_integer([2, -4, 0]), 2)
+
+    def test_only_negative_list(self):
+        self.assertEqual(max_integer([-3, -1, -7]), -1)
+
+    def test_one_element_list(self):
+        self.assertEqual(max_integer([4]), 4)
+
