@@ -1,0 +1,42 @@
+==============================
+How to use 0-add_integer.py
+==============================
+
+The module has one function called "addinteger()".
+
+Integers
+========
+"addinteger()" returns a value for a + b
+
+::
+	>>> add_integer = __import__('0-add_integer').add_integer
+	>>> add_integer(2, 3)
+	5
+
+Floats
+=======
+The function also works correctly for floats.
+
+::
+	>>> add_integer(2.0, 3)
+	5.0
+
+	>>> add_integer(2.0, 3.0)
+	5.0
+
+Strings and Other types
+=======================
+The funtion raises a TypeError exception for other types
+
+::
+	>>> add_integer("3", 2) #doctest: +ELLIPSIS
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+
+	>>> add_integer(3, "2") #doctest: +ELLIPSIS
+	Traceback (most recent call last):
+		...
+	TypeError: b must be an integer
+	
+
