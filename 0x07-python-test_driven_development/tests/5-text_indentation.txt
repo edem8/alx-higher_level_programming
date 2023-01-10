@@ -1,0 +1,41 @@
+===============================
+How to use "5-text_indentation"
+================================
+
+The module contains a function "text_indentation(str)" 
+	which print 2 new line after it encounters a ".", "?" or ":"
+Example of use
+::
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+	>>> text_indentation("Lorem ipsum dolor sit amet, consecteteur elit. Quonam modo? Uten titbi bidepr an uyrim vommr? Mpm autern hov: ifns nr sjm. ")
+	Lorem ipsum dolor sit amet, consecteteur elit.
+	<BLANKLINE>
+	Quonam modo?
+	<BLANKLINE>
+	Uten titbi bidepr an uyrim vommr?
+	<BLANKLINE>
+	Mpm autern hov:
+	<BLANKLINE>
+	ifns nr sjm.
+	<BLANKLINE>
+	
+=====================================================
+Testing multiple uses cases
+======================================
+
+::
+	>>> text_indentation(4) #doctest: +ELLIPSIS
+	Traceback (most recent call last):
+	TypeError: ...
+
+	>>> text_indentation(4.3) #doctest: +ELLIPSIS
+        Traceback (most recent call last):
+        TypeError: ...
+
+	>>> text_indentation() #doctest: +ELLIPSIS
+        Traceback (most recent call last):
+        TypeError: ...
+
+	>>> text_indentation([3, "Hello"]) #doctest: +ELLIPSIS
+        Traceback (most recent call last):
+        TypeError: ...
