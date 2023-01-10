@@ -50,11 +50,12 @@ The funtion raises a TypeError exception for other types
 	>>> add_integer(None)
 	Traceback (most recent call last):
 	TypeError: a must be an integer
-
-	>>> add_integer() #doctest: +ELLIPSIS
+	
+	>>> add_integer() #doctest: +ELLIPSIS, +NORMALIZE_WHITESPACE
 	Traceback (most recent call last):
 		...
 	TypeError: add_integer() missing 1 required positional argument: 'a'
+	
 
 	>>> add_integer(1000e1000) #doctest: +ELLIPSIS
 	Traceback (most recent call last):
