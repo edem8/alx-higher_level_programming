@@ -22,7 +22,7 @@ void print_python_string(PyObject *p)
 
 	str = PyUnicode_AsWideCharString(p, &len);
 
-	printf(" type: %s\n", type);
-	printf(" length: %ld\n", len);
-	printf(" value: %ls\n", str);
+	printf("  type: %s\n", type);
+	printf("  length: %ld\n", len);
+	printf("  value: %ls\n", str);
 }
