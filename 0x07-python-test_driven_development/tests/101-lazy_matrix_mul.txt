@@ -1,0 +1,75 @@
+===========================
+How to use "101-lazy_matrix_mul.py"
+============================
+call the lazy_matrix_mul() function and pass in two different matrices that are conformable-can be multiplied
+example:
+
+::
+        >>> matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul
+        >>> print(matrix_mul([[1, 2]], [[3.0, 4], [5, 6.0]]))
+        [[13. 16.]]
+
+==================================
+testing multiple cases
+==============================
+
+        >>> print(matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]]))
+        [[ 7 10]
+	 [15 22]]
+
+        >>> print(matrix_mul([[1, -2], [-5, 6]], [[2, 3], [4, -7]]))
+        [[ -6  17]
+	 [ 14 -57]]
+
+	>>> print(matrix_mul([[1, 2]], 4)) #doctest: +ELLIPSIS
+        Traceback (most recent call last):
+        ValueError: ...
+
+        >>> print(matrix_mul("3", [[1, 2]])) #doctest: +ELLIPSIS
+        Traceback (most recent call last):
+        ValueError: ...
+
+        >>> print(matrix_mul(["Hello", "4"], [[3, 2]])) #doctest: +ELLIPSIS
+        Traceback (most recent call last):
+        ValueError: ...
+
+        >>> print(matrix_mul([[3, 4]], ["3","2"])) #doctest: +ELLIPSIS
+        Traceback (most recent call last):
+        TypeError: ...
+
+        >>> print(matrix_mul([], [[3, 2]])) #doctest: +ELLIPSIS
+        Traceback (most recent call last):
+        ValueError: ...
+
+        >>> print(matrix_mul([[2, 3]], [[]])) #doctest: +ELLIPSIS
+        Traceback (most recent call last):
+        ValueError: ...
+
+	>>> print(matrix_mul([["Hello", 4]], [[3, 2]])) #doctest: +ELLIPSIS
+        Traceback (most recent call last):
+        ValueError: ...
+
+        >>> print(matrix_mul([[3, 6]], [["Holberton", "School"]])) #doctest: +ELLIPSIS
+        Traceback (most recent call last):
+        ValueError: ...
+
+        >>> print(matrix_mul([[3, 4], [2, 6 ,7]], [[3, 2]])) #doctest: +ELLIPSIS
+        Traceback (most recent call last):
+        ValueError: ...
+
+        >>> print(matrix_mul([[3, 4], [2, 6]], [[3, 2], [3]])) #doctest: +ELLIPSIS
+        Traceback (most recent call last):
+        ValueError: ...
+
+        >>> print(matrix_mul([[1, 2, 3], [3, 6, 5]], [[2, 3], [1, 2]])) #doctest: +ELLIPSIS
+        Traceback (most recent call last):
+        ValueError: ...
+
+	>>> print(matrix_mul([[1, 2]])) #doctest: +ELLIPSIS
+        Traceback (most recent call last):
+        TypeError: ...
+
+        >>> print(matrix_mul()) #doctest: +ELLIPSIS
+        Traceback (most recent call last):
+        TypeError: ...
+		
